@@ -146,6 +146,10 @@ Confusion matrix from the showcased MNIST run:
 
 ![Confusion matrix](./docs/assets/mnist-confusion-matrix.png)
 
+LinkedIn/social card preview:
+
+![LinkedIn social card](./docs/assets/linkedin-post-final.svg)
+
 ## Repository structure
 
 ```text
