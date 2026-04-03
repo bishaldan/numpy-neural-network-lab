@@ -1,11 +1,13 @@
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Docker Compose](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
 [![NumPy Only](https://img.shields.io/badge/Model-NumPy%20Only-013243?logo=numpy&logoColor=white)](https://numpy.org/)
-[![CI Ready](https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)](./.github/workflows/ci.yml)
+[![CI](https://github.com/bishaldan/numpy-neural-network-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/bishaldan/numpy-neural-network-lab/actions/workflows/ci.yml)
 
 # numpy-neural-network-lab
 
 `numpy-neural-network-lab` is a stronger AI/ML engineering portfolio project built around a neural network implemented from scratch with `NumPy`, then extended with validation-aware training, experiment comparison, Docker workflows, inference, and a lightweight Streamlit demo.
+
+GitHub repository: [bishaldan/numpy-neural-network-lab](https://github.com/bishaldan/numpy-neural-network-lab)
 
 This repository is intentionally not a notebook-only project. It is designed to show both ML understanding and engineering maturity.
 
