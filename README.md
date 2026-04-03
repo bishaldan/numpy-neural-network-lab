@@ -9,6 +9,8 @@
 
 GitHub repository: [bishaldan/numpy-neural-network-lab](https://github.com/bishaldan/numpy-neural-network-lab)
 
+![Project overview graphic](./docs/assets/linkedin-post-final.svg)
+
 This repository is intentionally not a notebook-only project. It is designed to show both ML understanding and engineering maturity.
 
 ## Why this is a good AI/ML portfolio project
@@ -145,10 +147,6 @@ Training curves from the showcased MNIST run:
 Confusion matrix from the showcased MNIST run:
 
 ![Confusion matrix](./docs/assets/mnist-confusion-matrix.png)
-
-LinkedIn/social card preview:
-
-![LinkedIn social card](./docs/assets/linkedin-post-final.svg)
 
 ## Repository structure
 
