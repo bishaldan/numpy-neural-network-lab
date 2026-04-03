@@ -1,0 +1,21 @@
+{
+  "dataset": "mnist_csv",
+  "csv_path": "data/raw/mnist_train.csv",
+  "samples_per_class": 500,
+  "epochs": 12,
+  "batch_size": 128,
+  "learning_rate": 0.03,
+  "validation_ratio": 0.1,
+  "dropout": 0.1,
+  "l2_lambda": 0.0001,
+  "early_stopping_patience": 4,
+  "lr_decay": 0.995,
+  "seed": 42,
+  "hidden_sizes": [
+    128,
+    64
+  ],
+  "output_dir": "outputs/mnist_run",
+  "run_name": "mnist_run",
+  "quiet": true
+}

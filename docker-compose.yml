@@ -1,0 +1,46 @@
+services:
+  trainer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    volumes:
+      - ./:/app
+      - ./data:/app/data
+      - ./outputs:/app/outputs
+    command: ["python", "train.py", "--dataset", "synthetic_digits", "--epochs", "120", "--samples-per-class", "500", "--output-dir", "outputs/latest_run"]
+
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    volumes:
+      - ./:/app
+      - ./data:/app/data
+      - ./outputs:/app/outputs
+    command: ["python", "-m", "unittest", "discover", "-s", "tests", "-v"]
+
+  experiments:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    volumes:
+      - ./:/app
+      - ./data:/app/data
+      - ./outputs:/app/outputs
+    command: ["python", "experiments.py", "--output-root", "outputs/experiments/v2_showcase"]
+
+  demo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    volumes:
+      - ./:/app
+      - ./data:/app/data
+      - ./outputs:/app/outputs
+    command: ["streamlit", "run", "app.py", "--server.address=0.0.0.0", "--server.port=8501"]
+    ports:
+      - "8501:8501"

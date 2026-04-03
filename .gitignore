@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+*.pyc
+outputs/*
+!outputs/mnist_run/
+!outputs/mnist_run/**
+data/raw/*.csv
+!data/raw/.gitkeep
+!outputs/.gitkeep
